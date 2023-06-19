@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ameldeformular</title>
+
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="http://marcel-eteki.developerakademie.net/send_mail.php" method="POST">
+        <fieldset>
+            <legend>Angaben zur Person</legend>
+            <label>
+                Vorname:
+                <input type="text" name="firstname" size="20" maxlength="50" />
+
+            </label>
+            <br />
+            <label>
+                Nachname:
+                <input type="text" name="lastname" size="30" maxlength="70" />
+
+            </label>
+            <br />
+            <label>
+                E-Mail:
+                <input type="email" name="email" size="30" maxlength="70" />
+
+            </label>
+            <br />
+            <label>
+                Passwort:
+                <input type="password" name="password" size="20" maxlength="30" />
+
+            </label>
+            <br />
+
+        </fieldset>
+        <br />
+        <fieldset>
+            <legend>Fragenbogen</legend>
+            <p>
+                <label for="browser">
+                    Welchen Browser nutzen Sie, um die DeveloperAkademieAufgabe zu erledigen?
+                </label>
+                <select id="browser" name="browser">
+                    <option value="chrome">Google Chrome</option>
+                    <option value="edge">Microsoft Edge</option>
+                    <option value="firefox">Mozilla Firefox</option>
+                    <option value="opera">Opera</option>
+                    <option value="safari">Safari</option>
+                </select>
+            </p>
+            <p>
+                Gefällt Ihnen unseres WeiterBildungsprogramm?
+                <br/>
+                <label>
+                <input type="radio" name="feedback" value="yes"/>
+                Ja
+            </label>
+                <label>
+                <input type="radio" name="feedback" value="no"/>
+                Nein
+            </label>
+            </p>
+            <p>
+                <br/>
+                <label for="improvements">
+                Haben Sie Verbesserungsvorschläge?
+
+            </label>
+                <br/>
+                <textarea id="improvements" rows="5" cols="50"> </textarea>
+            </p>
+            <p>
+                <label>
+                <input type="checkbox" name="newsletter"/>
+                Möchten Sie sich für unseren Newsletter anmelden?
+            </label>
+            </p>
+        </fieldset>
+        <input type="submit" value="Formular abschicken" />
+
+
+    </form>
+
+</body>
+
+</html>
